@@ -2,6 +2,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Footer from "./components/Footer";
 import Navbar from './components/Navbar';
 import TypeWriter from './components/TypeWriter';
 
@@ -97,9 +98,12 @@ export default function Home() {
                 />
               </motion.div>
             </motion.div>
+
           </div>
         </div>
       </div>
+      <Footer />
+
     </>
   );
 }
