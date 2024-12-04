@@ -1,17 +1,31 @@
-/** @type {import('tailwindcss').Config} */
+// tailwind.config.js
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    './src/**/*.{js,jsx,ts,tsx}',
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      keyframes: {
+        'cursor-blink': {
+          '0%, 100%': { opacity: 1 },
+          '50%': { opacity: 0 }
+        }
       },
+      animation: {
+        'cursor-blink': 'cursor-blink 1s step-end infinite'
+      },
+      fontFamily: {
+        titles: ['var(--font-caveat)'],
+        body: ['var(--font-chewy)'],
+      },
+      colors: {
+        primary: colors.indigo,
+        secondary: colors.rose,
+      },
+
     },
   },
   plugins: [],
-};
+}
