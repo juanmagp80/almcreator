@@ -3,6 +3,7 @@
 
 import { motion } from "framer-motion";
 import BookCard from '../components/BookCard';
+import Navbar from '../components/Navbar';
 
 const books = [
     {
@@ -37,56 +38,59 @@ const books = [
 
 const Books = () => {
     return (
-        <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 py-16 px-6 relative overflow-hidden">
-            <div className="max-w-7xl mx-auto relative">
-                <motion.div
-                    initial={{ opacity: 0, y: -20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8 }}
-                    className="text-center mb-16"
-                >
-                    <h1 className="text-5xl font-titles text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600 mb-4">
-                        Mis Libros
-                    </h1>
-                    <div className="w-24 h-1 bg-gradient-to-r from-purple-500 to-pink-500 mx-auto rounded-full" />
-                </motion.div>
+        <>
+            <Navbar />
+            <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 py-16 px-6 relative overflow-hidden">
+                <div className="max-w-7xl mx-auto relative">
+                    <motion.div
+                        initial={{ opacity: 0, y: -20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8 }}
+                        className="text-center mb-16"
+                    >
+                        <h1 className="text-5xl font-titles text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600 mb-4">
+                            Mis Libros
+                        </h1>
+                        <div className="w-24 h-1 bg-gradient-to-r from-purple-500 to-pink-500 mx-auto rounded-full" />
+                    </motion.div>
 
-                <div className="grid grid-cols-3 gap-12 auto-rows-min">
-                    {/* Primeros 3 libros arriba */}
-                    {books.slice(0, 3).map((book, index) => (
-                        <motion.div
-                            key={book.id}
-                            initial={{ opacity: 0, y: 50 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.5, delay: index * 0.1 }}
-                            whileHover={{ scale: 1.03 }}
-                            className="backdrop-blur-lg bg-white/30 rounded-2xl p-6 shadow-xl 
+                    <div className="grid grid-cols-3 gap-12 auto-rows-min">
+                        {/* Primeros 3 libros arriba */}
+                        {books.slice(0, 3).map((book, index) => (
+                            <motion.div
+                                key={book.id}
+                                initial={{ opacity: 0, y: 50 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.5, delay: index * 0.1 }}
+                                whileHover={{ scale: 1.03 }}
+                                className="backdrop-blur-lg bg-white/30 rounded-2xl p-6 shadow-xl 
                                      border border-white/20 transition-all duration-300
                                      hover:shadow-2xl hover:shadow-purple-500/20"
-                        >
-                            <BookCard {...book} />
-                        </motion.div>
-                    ))}
+                            >
+                                <BookCard {...book} />
+                            </motion.div>
+                        ))}
 
-                    {/* Último libro abajo a la izquierda */}
-                    {books.slice(3, 4).map((book) => (
-                        <motion.div
-                            key={book.id}
-                            initial={{ opacity: 0, y: 50 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.5, delay: 0.3 }}
-                            whileHover={{ scale: 1.03 }}
-                            className="backdrop-blur-lg bg-white/30 rounded-2xl p-6 shadow-xl 
+                        {/* Último libro abajo a la izquierda */}
+                        {books.slice(3, 4).map((book) => (
+                            <motion.div
+                                key={book.id}
+                                initial={{ opacity: 0, y: 50 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.5, delay: 0.3 }}
+                                whileHover={{ scale: 1.03 }}
+                                className="backdrop-blur-lg bg-white/30 rounded-2xl p-6 shadow-xl 
                                      border border-white/20 transition-all duration-300
                                      hover:shadow-2xl hover:shadow-purple-500/20
                                      col-span-1"
-                        >
-                            <BookCard {...book} />
-                        </motion.div>
-                    ))}
+                            >
+                                <BookCard {...book} />
+                            </motion.div>
+                        ))}
+                    </div>
                 </div>
             </div>
-        </div>
+        </>
     );
 };
 
