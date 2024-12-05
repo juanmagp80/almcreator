@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
         />
       </Head>
-      <body className=" font-chewy bg-gray-50 text-gray-800">
+      <body className="antialiased font-chewy bg-gray-50 text-gray-800">
         <main className="min-h-screen">
           {children}
         </main>

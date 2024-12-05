@@ -1,6 +1,5 @@
 // src/app/page.jsx
 "use client";
-
 import { motion } from "framer-motion";
 import Footer from "./components/Footer";
 import Navbar from './components/Navbar';
@@ -16,6 +15,7 @@ const floatingElements = [
 ];
 
 export default function Home() {
+
   return (
     <>
       <Navbar />

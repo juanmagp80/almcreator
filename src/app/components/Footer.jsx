@@ -35,7 +35,7 @@ const Footer = () => {
                     {/* Enlaces de redes sociales */}
                     <div className="flex space-x-6 mb-8">
                         <motion.a
-                            href="https://instagram.com/almcreator"
+                            href="https://instagram.com/almdevil2"
                             target="_blank"
                             rel="noopener noreferrer"
                             whileHover={{ scale: 1.2, rotate: 5 }}
@@ -45,7 +45,7 @@ const Footer = () => {
                             <FaInstagram />
                         </motion.a>
                         <motion.a
-                            href="https://wa.me/+34XXXXXXXXX"
+                            href="https://wa.me/+34648049544"
                             target="_blank"
                             rel="noopener noreferrer"
                             whileHover={{ scale: 1.2, rotate: -5 }}

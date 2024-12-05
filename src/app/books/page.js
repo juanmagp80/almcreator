@@ -11,28 +11,33 @@ const books = [
         title: "La Maravilla de la Navidad: Una Historia Mágicamente Divertida para Niños",
         author: "ALM CREATOR",
         cover: "/navidad.jpg",
-        description: "Andaira recibe una carta misteriosa que cambiará su Navidad para siempre..."
+        description: "Andaira recibe una carta misteriosa que cambiará su Navidad para siempre...",
+        purchaseLink: "https://www.amazon.es/Maravilla-Navidad-M%C3%A1gicamente-Divertida-Andairablox-ebook/dp/B0DNQB9K8S/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2U1F42UB8E33B&dib=eyJ2IjoiMSJ9.BxJUg5A3VFsfVwAf4rt0eDtPLGw17JvtIqraxFLHWWUmshTWrlOSWyycqUsMXyXzzvMmwwx1OZeazMgVUQlWaN-yFRs5t92Oj_cwAM5GnJ9qDGT_dt0cfcN6tQ7v4HIGafxjwKSG2nmgwqu38eaSb347GFVrpDHCKseZpnlxz_SfgPpUS7fS-BsNE9PWN6Oqk349Uu_3EpwZGa8MVD_VmQ.TaGzj2Lymv2zrN-rhOgZhefvQYWy2roHWwEjIDCH5kU&dib_tag=se&keywords=alm+creator&nsdOptOutParam=true&qid=1733385452&sprefix=alm+creator%2Caps%2C110&sr=8-1"
+
     },
     {
         id: 2,
         title: "Truco o Trato: Historia terrorificamente divertida de Halloween",
         author: "ALM CREATOR",
         cover: "/halloween.jpg",
-        description: "Andaira y sus amigos están listos para disfrutar de la noche más aterradora del año..."
+        description: "Andaira y sus amigos están listos para disfrutar de la noche más aterradora del año...",
+        purchaseLink: "https://www.amazon.es/Truco-Trato-terrorificamente-divertida-Andairablox-ebook/dp/B0DJ269ZZW/ref=sr_1_2?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2U1F42UB8E33B&dib=eyJ2IjoiMSJ9.BxJUg5A3VFsfVwAf4rt0eDtPLGw17JvtIqraxFLHWWUmshTWrlOSWyycqUsMXyXzzvMmwwx1OZeazMgVUQlWaN-yFRs5t92Oj_cwAM5GnJ9qDGT_dt0cfcN6tQ7v4HIGafxjwKSG2nmgwqu38eaSb347GFVrpDHCKseZpnlxz_SfgPpUS7fS-BsNE9PWN6Oqk349Uu_3EpwZGa8MVD_VmQ.TaGzj2Lymv2zrN-rhOgZhefvQYWy2roHWwEjIDCH5kU&dib_tag=se&keywords=alm+creator&nsdOptOutParam=true&qid=1733385741&sprefix=alm+creator%2Caps%2C110&sr=8-2"
     },
     {
         id: 3,
         title: "Diario de una Youtuber: Divertidos consejos para ser una youtuber",
         author: "ALM CREATOR",
         cover: "/youtuber.jpg",
-        description: "Diario de una Youtuber es un libro divertido y entretenido..."
+        description: "Diario de una Youtuber es un libro divertido y entretenido...",
+        purchaseLink: "https://www.amazon.es/Diario-una-Youtuber-Andairablox-CREATOR/dp/B0D9RV5R3F/ref=sr_1_3?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2U1F42UB8E33B&dib=eyJ2IjoiMSJ9.BxJUg5A3VFsfVwAf4rt0eDtPLGw17JvtIqraxFLHWWUmshTWrlOSWyycqUsMXyXzzvMmwwx1OZeazMgVUQlWaN-yFRs5t92Oj_cwAM5GnJ9qDGT_dt0cfcN6tQ7v4HIGafxjwKSG2nmgwqu38eaSb347GFVrpDHCKseZpnlxz_SfgPpUS7fS-BsNE9PWN6Oqk349Uu_3EpwZGa8MVD_VmQ.TaGzj2Lymv2zrN-rhOgZhefvQYWy2roHWwEjIDCH5kU&dib_tag=se&keywords=alm+creator&nsdOptOutParam=true&qid=1733385741&sprefix=alm+creator%2Caps%2C110&sr=8-3"
     },
     {
         id: 4,
         title: "Aventuras de Vacaciones: Emocionantes vacaciones de verano repletas de aventuras.",
         author: "ALM CREATOR",
         cover: "/vacaciones.jpg",
-        description: "Este libro forma parte de la serie ANDAIRABLOX..."
+        description: "Este libro forma parte de la serie ANDAIRABLOX...",
+        purchaseLink: "https://www.amazon.es/Aventuras-Vacaciones-Emocionantes-vacaciones-Andairablox-ebook/dp/B0DJ7SQ6SV/ref=sr_1_4?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2U1F42UB8E33B&dib=eyJ2IjoiMSJ9.BxJUg5A3VFsfVwAf4rt0eDtPLGw17JvtIqraxFLHWWUmshTWrlOSWyycqUsMXyXzzvMmwwx1OZeazMgVUQlWaN-yFRs5t92Oj_cwAM5GnJ9qDGT_dt0cfcN6tQ7v4HIGafxjwKSG2nmgwqu38eaSb347GFVrpDHCKseZpnlxz_SfgPpUS7fS-BsNE9PWN6Oqk349Uu_3EpwZGa8MVD_VmQ.TaGzj2Lymv2zrN-rhOgZhefvQYWy2roHWwEjIDCH5kU&dib_tag=se&keywords=alm+creator&nsdOptOutParam=true&qid=1733385741&sprefix=alm+creator%2Caps%2C110&sr=8-4"
     }
 ];
 
@@ -67,7 +72,15 @@ const Books = () => {
                                      border border-white/20 transition-all duration-300
                                      hover:shadow-2xl hover:shadow-purple-500/20"
                             >
-                                <BookCard {...book} />
+                                <BookCard
+                                    key={index}
+                                    title={book.title}
+                                    cover={book.cover}
+                                    author={book.author}
+                                    description={book.description}
+                                    purchaseLink={book.purchaseLink}
+                                />
+
                             </motion.div>
                         ))}
 
