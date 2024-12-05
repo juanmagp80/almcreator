@@ -1,9 +1,14 @@
+// next.config.mjs
 const nextConfig = {
-    reactStrictMode: true,
-    swcMinify: true,
-    experimental: {
-        appDir: true
-    }
+    async redirects() {
+        return [
+            {
+                source: '/',
+                destination: '/books',
+                permanent: true,
+            },
+        ]
+    },
 }
 
 export default nextConfig

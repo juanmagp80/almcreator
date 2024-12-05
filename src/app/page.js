@@ -94,7 +94,7 @@ export default function Home() {
                 <img
                   src="/alberto.jpg"
                   alt="Foto del escritor"
-                  className="relative rounded-full shadow-2xl object-cover w-full h-full border-4 border-white transform transition-all duration-500"
+                  className="relative rounded-full shadow-2xl object-cover w-250 h-250 border-4 border-white transform transition-all duration-500"
                 />
               </motion.div>
             </motion.div>

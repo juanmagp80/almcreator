@@ -47,8 +47,8 @@ export default function Navbar() {
                     <div className="hidden md:block">
                         <div className="ml-10 flex font-sans items-baseline space-x-8">
                             {[
-                                { name: "Inicio", href: "/" },
                                 { name: "Libros", href: "/books" },
+                                { name: "Autor", href: "/autor" },
                                 { name: "Contacto", href: "/contact" },
                             ].map((item) => (
                                 <Link
