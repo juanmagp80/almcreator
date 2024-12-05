@@ -2,6 +2,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 
 const Contacto = () => {
@@ -76,6 +77,7 @@ const Contacto = () => {
                     </div>
                 </div>
             </div>
+            <Footer />
         </>
     );
 };

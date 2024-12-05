@@ -3,6 +3,7 @@
 
 import { motion } from "framer-motion";
 import BookCard from '../components/BookCard';
+import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 
 const books = [
@@ -103,6 +104,7 @@ const Books = () => {
                     </div>
                 </div>
             </div>
+            <Footer />
         </>
     );
 };
