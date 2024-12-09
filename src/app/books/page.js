@@ -14,7 +14,6 @@ const books = [
         cover: "/navidad.jpg",
         description: "Andaira recibe una carta misteriosa que cambiará su Navidad para siempre...",
         purchaseLink: "https://www.amazon.es/Maravilla-Navidad-M%C3%A1gicamente-Divertida-Andairablox-ebook/dp/B0DNQB9K8S/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2U1F42UB8E33B&dib=eyJ2IjoiMSJ9.BxJUg5A3VFsfVwAf4rt0eDtPLGw17JvtIqraxFLHWWUmshTWrlOSWyycqUsMXyXzzvMmwwx1OZeazMgVUQlWaN-yFRs5t92Oj_cwAM5GnJ9qDGT_dt0cfcN6tQ7v4HIGafxjwKSG2nmgwqu38eaSb347GFVrpDHCKseZpnlxz_SfgPpUS7fS-BsNE9PWN6Oqk349Uu_3EpwZGa8MVD_VmQ.TaGzj2Lymv2zrN-rhOgZhefvQYWy2roHWwEjIDCH5kU&dib_tag=se&keywords=alm+creator&nsdOptOutParam=true&qid=1733385452&sprefix=alm+creator%2Caps%2C110&sr=8-1"
-
     },
     {
         id: 2,
@@ -60,7 +59,7 @@ const Books = () => {
                         <div className="w-24 h-1 bg-gradient-to-r from-purple-500 to-pink-500 mx-auto rounded-full" />
                     </motion.div>
 
-                    <div className="grid grid-cols-3 gap-12 auto-rows-min">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 auto-rows-min">
                         {/* Primeros 3 libros arriba */}
                         {books.slice(0, 3).map((book, index) => (
                             <motion.div
@@ -81,7 +80,6 @@ const Books = () => {
                                     description={book.description}
                                     purchaseLink={book.purchaseLink}
                                 />
-
                             </motion.div>
                         ))}
 

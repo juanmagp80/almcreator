@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 
 export default function Navbar() {
     const [scrolled, setScrolled] = useState(false);
+    const [menuOpen, setMenuOpen] = useState(false);
     const pathname = usePathname();
 
     useEffect(() => {
@@ -43,8 +44,20 @@ export default function Navbar() {
                         </Link>
                     </motion.div>
 
+                    {/* Hamburger Button */}
+                    <div className="md:hidden">
+                        <button
+                            onClick={() => setMenuOpen(!menuOpen)}
+                            className="text-gray-600 hover:text-primary-600 focus:outline-none"
+                        >
+                            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d={menuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16m-7 6h7"}></path>
+                            </svg>
+                        </button>
+                    </div>
+
                     {/* Navigation Links */}
-                    <div className="hidden md:block">
+                    <div className={`md:flex md:items-center md:space-x-8 ${menuOpen ? "block" : "hidden"}`}>
                         <div className="ml-10 flex font-sans items-baseline space-x-8">
                             {[
                                 { name: "Libros", href: "/books" },
