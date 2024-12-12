@@ -1,13 +1,30 @@
 // src/app/components/Contacto.jsx
 "use client";
 
+import emailjs from 'emailjs-com';
 import { motion } from "framer-motion";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 
 const Contacto = () => {
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
+            .then((result) => {
+                console.log(result.text);
+                alert("Mensaje enviado con éxito");
+            }, (error) => {
+                console.log(error.text);
+                alert("Hubo un error al enviar el mensaje");
+            });
+
+        e.target.reset();
+    };
+
     return (
-        <>         <Navbar />
+        <>
+            <Navbar />
             <div className="min-h-screen pt-24 pb-16 bg-gradient-to-br from-indigo-100 via-purple-50 to-pink-100 overflow-hidden">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
                     <div className="lg:grid lg:grid-cols-12 lg:gap-8 relative">
@@ -28,7 +45,7 @@ const Contacto = () => {
                             >
                                 Si tienes alguna pregunta o comentario, no dudes en enviarme un mensaje.
                             </motion.p>
-                            <form className="mt-8 space-y-6">
+                            <form className="mt-8 space-y-6" onSubmit={sendEmail}>
                                 <div className="rounded-md shadow-sm -space-y-px">
                                     <div>
                                         <label htmlFor="name" className="sr-only">Nombre</label>
@@ -81,6 +98,5 @@ const Contacto = () => {
         </>
     );
 };
-
 
 export default Contacto;
