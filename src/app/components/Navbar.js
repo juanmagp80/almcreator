@@ -57,8 +57,8 @@ export default function Navbar() {
                     </div>
 
                     {/* Navigation Links */}
-                    <div className={`md:flex md:items-center md:space-x-8 ${menuOpen ? "block" : "hidden"}`}>
-                        <div className="ml-10 flex font-sans items-baseline space-x-8">
+                    <div className={`md:flex md:items-center md:space-x-8 ${menuOpen ? "block" : "hidden"} md:static absolute top-20 left-0 w-full bg-white md:bg-transparent md:shadow-none shadow-lg`}>
+                        <div className="ml-10 flex flex-col md:flex-row font-sans items-baseline space-y-4 md:space-y-0 md:space-x-8 p-4 md:p-0 overflow-y-auto max-h-[calc(100vh-5rem)]">
                             {[
                                 { name: "Libros", href: "/books" },
                                 { name: "Autor", href: "/autor" },
